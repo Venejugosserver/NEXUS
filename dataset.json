@@ -1,13 +1,5 @@
 [
   {
-    "id": 2,
-    "nombre": "Dashboard de Finanzas",
-    "categoria": "Finanzas",
-    "url": "https://ejemplo.com/finanzas",
-    "acceso": "gerencia",
-    "descripcion": "Estado financiero general"
-  },
-  {
     "id": 3,
     "nombre": "Reporte de Operaciones",
     "categoria": "Operaciones",
