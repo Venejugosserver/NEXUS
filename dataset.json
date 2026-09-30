@@ -1,13 +1,5 @@
 [
   {
-    "id": 1,
-    "nombre": "Reporte de Ventas Diarias",
-    "categoria": "Ventas",
-    "url": "https://ejemplo.com/ventas-diarias",
-    "acceso": "publico",
-    "descripcion": "Resumen de ventas del dia"
-  },
-  {
     "id": 2,
     "nombre": "Dashboard de Finanzas",
     "categoria": "Finanzas",
