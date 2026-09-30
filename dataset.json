@@ -6,5 +6,13 @@
     "url": "https://venejugosserver.github.io/kpi-nestle1/performance.html",
     "acceso": "publico",
     "descripcion": "REPORTE NESTLE ROLLING Y ACTIVACION "
+  },
+  {
+    "id": 1790775027336,
+    "nombre": "KPI NESTLE ADMIN",
+    "categoria": "VENTAS",
+    "url": "https://venejugosserver.github.io/kpi-nestle1/admin.html",
+    "acceso": "gerencia",
+    "descripcion": "REPORTE NESTLE ROLLING Y ACTIVACION  PANEL DE MODIFICACION"
   }
 ]
