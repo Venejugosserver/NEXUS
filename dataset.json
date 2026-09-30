@@ -1,10 +1,1 @@
-[
-  {
-    "id": 3,
-    "nombre": "Reporte de Operaciones",
-    "categoria": "Operaciones",
-    "url": "https://ejemplo.com/operaciones",
-    "acceso": "admin",
-    "descripcion": "Detalle operacional"
-  }
-]
+[]
