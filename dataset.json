@@ -14,5 +14,13 @@
     "url": "https://venejugosserver.github.io/kpi-nestle1/admin.html",
     "acceso": "gerencia",
     "descripcion": "REPORTE NESTLE ROLLING Y ACTIVACION  PANEL DE MODIFICACION"
+  },
+  {
+    "id": 1791068361850,
+    "nombre": "KPI GLOBAL",
+    "categoria": "VENTAS-COORDINACION-DIRECCION",
+    "url": "https://venejugosserver.github.io/KPI-GLOBAL/performance.html",
+    "acceso": "publico",
+    "descripcion": "Reporte de Marcas presentes en Mobilvendor"
   }
 ]
