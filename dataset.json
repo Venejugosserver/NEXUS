@@ -22,5 +22,13 @@
     "url": "https://venejugosserver.github.io/KPI-GLOBAL/performance.html",
     "acceso": "publico",
     "descripcion": "REPORTE DE MARCAS PRESENTES EN MOBILVENDOR"
+  },
+  {
+    "id": 1791224623734,
+    "nombre": "KPI GLOBAL ADMIN",
+    "categoria": "VENTAS-COORDINACION-DIRECCION",
+    "url": "https://venejugosserver.github.io/KPI-GLOBAL/admin.html",
+    "acceso": "gerencia",
+    "descripcion": "REPORTE INCLYE TODOS LOS MEDIBLES"
   }
 ]
