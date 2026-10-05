@@ -30,5 +30,13 @@
     "url": "https://venejugosserver.github.io/KPI-GLOBAL/admin.html",
     "acceso": "gerencia",
     "descripcion": "REPORTE INCLYE TODOS LOS MEDIBLES"
+  },
+  {
+    "id": 1791224697806,
+    "nombre": "INDICADORES NESTLE ADMIN",
+    "categoria": "KPI ACTIVACION Y ROLLING",
+    "url": "https://venejugosserver.github.io/kpi-nestle1/admin.html",
+    "acceso": "gerencia",
+    "descripcion": "KPI NESTLE ADMIN"
   }
 ]
