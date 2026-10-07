@@ -30,5 +30,13 @@
     "url": "https://venejugosserver.github.io/KPI-GLOBAL/admin.html",
     "acceso": "gerencia",
     "descripcion": "REPORTE INCLYE TODOS LOS MEDIBLES"
+  },
+  {
+    "id": 1791395518123,
+    "nombre": "Cuentas por cobrar y comisiones",
+    "categoria": "COBRANZAS",
+    "url": "https://venejugosserver.github.io/VENEJUGOS-CXC-COMISIONES/cxc.html",
+    "acceso": "publico",
+    "descripcion": "Reporte detallado de comisiones y CXC"
   }
 ]
