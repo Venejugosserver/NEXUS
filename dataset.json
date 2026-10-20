@@ -16,14 +16,6 @@
     "descripcion": "REPORTE NESTLE ROLLING Y ACTIVACION  PANEL DE MODIFICACION"
   },
   {
-    "id": 1791068704847,
-    "nombre": "KPI GLOBAL",
-    "categoria": "VENTAS-COORDINACION-DIRECCION",
-    "url": "https://venejugosserver.github.io/KPI-GLOBAL/performance.html",
-    "acceso": "publico",
-    "descripcion": "REPORTE DE MARCAS PRESENTES EN MOBILVENDOR"
-  },
-  {
     "id": 1791224623734,
     "nombre": "KPI GLOBAL ADMIN",
     "categoria": "VENTAS-COORDINACION-DIRECCION",
