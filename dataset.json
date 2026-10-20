@@ -46,5 +46,13 @@
     "url": "https://venejugosserver.github.io/KPI-PEPSICO/admin.html",
     "acceso": "gerencia",
     "descripcion": ""
+  },
+  {
+    "id": 1792512274127,
+    "nombre": "KPI GLOBAL ADMIN",
+    "categoria": "VENTAS",
+    "url": "https://venejugosserver.github.io/KPI-GLOBAL/admin.html",
+    "acceso": "gerencia",
+    "descripcion": "REPORTE INCLYE TODOS LOS MEDIBLES"
   }
 ]
