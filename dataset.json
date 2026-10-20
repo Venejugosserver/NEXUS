@@ -38,5 +38,13 @@
     "url": "https://venejugosserver.github.io/VENEJUGOS-CXC-COMISIONES/cxc.html",
     "acceso": "publico",
     "descripcion": "Reporte detallado de comisiones y CXC"
+  },
+  {
+    "id": 1792510908046,
+    "nombre": "KPI PEPSICO",
+    "categoria": "VENTAS",
+    "url": "https://venejugosserver.github.io/KPI-PEPSICO/reporte.html",
+    "acceso": "publico",
+    "descripcion": "Reporte ACTIVACIONES PEPSICO"
   }
 ]
