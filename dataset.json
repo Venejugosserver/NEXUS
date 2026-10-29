@@ -54,5 +54,13 @@
     "url": "https://venejugosserver.github.io/KPI-GLOBAL/admin.html",
     "acceso": "gerencia",
     "descripcion": "REPORTE INCLYE TODOS LOS MEDIBLES"
+  },
+  {
+    "id": 1793281518822,
+    "nombre": "INVENTARIO-AUDITABLE",
+    "categoria": "LOGISTICA-ALMACEN",
+    "url": "https://venejugosserver.github.io/INVENTARIO/inventario.html",
+    "acceso": "publico",
+    "descripcion": "Inventario Mobilvendor,Modulo B vs Ventas "
   }
 ]
