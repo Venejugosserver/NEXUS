@@ -48,14 +48,6 @@
     "descripcion": ""
   },
   {
-    "id": 1793281518822,
-    "nombre": "INVENTARIO-AUDITABLE",
-    "categoria": "LOGISTICA-ALMACEN",
-    "url": "https://venejugosserver.github.io/INVENTARIO/inventario.html",
-    "acceso": "publico",
-    "descripcion": "Inventario Mobilvendor,Modulo B vs Ventas "
-  },
-  {
     "id": 1793375935775,
     "nombre": "KPI GLOBAL ADMIN",
     "categoria": "VENTAS",
