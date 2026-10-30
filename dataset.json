@@ -54,5 +54,13 @@
     "url": "https://venejugosserver.github.io/INVENTARIO/inventario.html",
     "acceso": "publico",
     "descripcion": "Inventario Mobilvendor,Modulo B vs Ventas "
+  },
+  {
+    "id": 1793375935775,
+    "nombre": "KPI GLOBAL ADMIN",
+    "categoria": "VENTAS",
+    "url": "https://venejugosserver.github.io/KPI-GLOBAL/admin.html",
+    "acceso": "admin",
+    "descripcion": "REPORTE INCLYE TODOS LOS MEDIBLES"
   }
 ]
