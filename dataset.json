@@ -62,13 +62,5 @@
     "url": "https://venejugosserver.github.io/INVENTARIO/inventario.html",
     "acceso": "publico",
     "descripcion": "Inventario Mobilvendor,Modulo B vs Ventas "
-  },
-  {
-    "id": 1793300352569,
-    "nombre": "INVENTARIO-AUDITABLE ADMINISTRATIVO",
-    "categoria": "LOGISTICA-INVENTARIO",
-    "url": "https://venejugosserver.github.io/INVENTARIO/admin.html",
-    "acceso": "admin",
-    "descripcion": "PANEL ADMINISTRATIVO"
   }
 ]
