@@ -54,5 +54,13 @@
     "url": "https://venejugosserver.github.io/KPI-GLOBAL/admin.html",
     "acceso": "admin",
     "descripcion": "REPORTE INCLYE TODOS LOS MEDIBLES"
+  },
+  {
+    "id": 1793387974780,
+    "nombre": "NMS-EVENTOS",
+    "categoria": "VENTAS",
+    "url": "https://venejugosserver.github.io/NMS-EVENTOS/",
+    "acceso": "publico",
+    "descripcion": "EVENTOS ESCUELAS Y UNIVERSIDADES"
   }
 ]
