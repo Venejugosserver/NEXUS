@@ -32,14 +32,6 @@
     "descripcion": "REPORTE RESTO DE MARCAS MEDIBLES"
   },
   {
-    "id": 1792511604605,
-    "nombre": "KPI PEPSICO ADMIN",
-    "categoria": "VENTAS",
-    "url": "https://venejugosserver.github.io/KPI-PEPSICO/admin.html",
-    "acceso": "gerencia",
-    "descripcion": ""
-  },
-  {
     "id": 1793375935775,
     "nombre": "KPI GLOBAL ADMIN",
     "categoria": "VENTAS",
