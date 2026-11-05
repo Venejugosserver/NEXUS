@@ -46,5 +46,13 @@
     "url": "https://venejugosserver.github.io/NMS-EVENTOS/",
     "acceso": "publico",
     "descripcion": "EVENTOS ESCUELAS Y UNIVERSIDADES"
+  },
+  {
+    "id": 1793897417507,
+    "nombre": "CORTE DE VENTAS ",
+    "categoria": "VENTAS",
+    "url": "https://venejugosserver.github.io/Corte-de-ventas-/admin.html",
+    "acceso": "gerencia",
+    "descripcion": "Corte de Ventas diario (medio dia y cierre)"
   }
 ]
