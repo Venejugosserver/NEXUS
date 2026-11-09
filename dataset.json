@@ -54,5 +54,13 @@
     "url": "https://venejugosserver.github.io/Corte-de-ventas-/admin.html",
     "acceso": "gerencia",
     "descripcion": "Corte de Ventas diario (medio dia y cierre)"
+  },
+  {
+    "id": 1794236823157,
+    "nombre": "SUGERIDO DE COMPRA",
+    "categoria": "VENTAS",
+    "url": "https://venejugosserver.github.io/Corte-de-ventas-/admin.html",
+    "acceso": "gerencia",
+    "descripcion": "Sugerido de compra por marca y cuadro analitico de comportamiento"
   }
 ]
