@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://script.google.com https://script.googleusercontent.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>NEXUS · Reportes de Venejugos</title>
+  <meta name="description" content="Portal interno de reportes de Venejugos.">
+  <link rel="preload" href="./bricolage.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="nexus.css">
+  <link rel="icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1a4fe8">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="NEXUS">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body class="entra bloqueado">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="masthead">
+    <a class="marca" href="#general" aria-label="NEXUS, inicio">
+      <img src="logo-venejugos.png" alt="Venejugos" width="52" height="52">
+      <span class="marca-texto">
+        <span class="wordmark">NEXUS</span>
+        <span class="marca-sub">Venejugos</span>
+      </span>
+    </a>
+    <span class="espacio"></span>
+    <nav class="segmentos" aria-label="Paneles">
+      <a href="#general" data-ruta="general">General</a>
+      <a href="#gerencia" data-ruta="gerencia">Gerencia</a>
+      <a href="#admin" data-ruta="admin">Admin</a>
+    </nav>
+  </header>
+  <svg class="cinta" viewBox="0 0 1280 60" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="metal-plata" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1280" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset=".22" stop-color="#c3cde2"/><stop offset=".45" stop-color="#ffffff"/><stop offset=".7" stop-color="#a9b6cf"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+      <linearGradient id="metal-rojo" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1280" y2="0"><stop offset="0" stop-color="#ff5a6e"/><stop offset=".25" stop-color="#e2001a"/><stop offset=".5" stop-color="#8f0011"/><stop offset=".75" stop-color="#e2001a"/><stop offset="1" stop-color="#ff4d63"/></linearGradient>
+    </defs>
+    <path class="c-azul" pathLength="1600" d="M8 34 C 260 6, 520 52, 790 28 S 1120 6, 1272 22"/>
+    <path class="c-rojo" pathLength="1600" d="M8 46 C 280 20, 560 60, 820 40 S 1140 22, 1272 34"/>
+  </svg>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- PANEL GENERAL -->
+    <section class="panel" id="panel-general" data-panel="general" aria-labelledby="t-general">
+      <h1 class="titular" id="t-general">Todos los reportes, en un solo lugar.</h1>
+      <p class="bajada">Busca por nombre o filtra por área. Cada reporte se abre en una pestaña nueva.</p>
+      <div class="barra">
+        <div class="buscador">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <label class="visually-hidden" for="buscarGeneral">Buscar reporte</label>
+          <input type="search" id="buscarGeneral" data-buscar="general" placeholder="Buscar reporte" autocomplete="off">
+        </div>
+        <div class="chips" data-chips="general" role="group" aria-label="Filtrar por área"></div>
+      </div>
+      <div data-lista="general" aria-live="polite"></div>
+    </section>
+
+    <!-- PANEL GERENCIA -->
+    <section class="panel" id="panel-gerencia" data-panel="gerencia" aria-labelledby="t-gerencia" hidden>
+      <h1 class="titular" id="t-gerencia">Reportes de gerencia</h1>
+      <p class="bajada">Incluye los reportes públicos y los de acceso gerencial.</p>
+      <div class="pestanas" role="tablist" aria-label="Secciones de gerencia">
+        <button role="tab" aria-selected="true" aria-controls="tab-g-reportes" id="b-g-reportes">Reportes</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-g-claves" id="b-g-claves" tabindex="-1">Contraseñas</button>
+      </div>
+      <div role="tabpanel" id="tab-g-reportes" aria-labelledby="b-g-reportes">
+        <div class="barra">
+          <div class="buscador">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <label class="visually-hidden" for="buscarGerencia">Buscar reporte</label>
+            <input type="search" id="buscarGerencia" data-buscar="gerencia" placeholder="Buscar reporte" autocomplete="off">
+          </div>
+          <div class="chips" data-chips="gerencia" role="group" aria-label="Filtrar por área"></div>
+        </div>
+        <div data-lista="gerencia" aria-live="polite"></div>
+      </div>
+      <div role="tabpanel" id="tab-g-claves" aria-labelledby="b-g-claves" hidden>
+        <form class="hoja" id="formClaves">
+          <h3>Cambiar contraseñas</h3>
+          <p>El cambio solo aplica en este navegador. Deja un campo vacío para no modificarlo.</p>
+          <div class="fila">
+            <div class="campo">
+              <label for="nuevaGerencia">Nueva contraseña de gerencia</label>
+              <input type="password" id="nuevaGerencia" autocomplete="new-password" minlength="8">
+            </div>
+            <div class="campo">
+              <label for="nuevaAdmin">Nueva contraseña de admin</label>
+              <input type="password" id="nuevaAdmin" autocomplete="new-password" minlength="8">
+            </div>
+          </div>
+          <div class="acciones"><button class="btn btn-primario" type="submit">Guardar contraseñas</button></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- PANEL ADMIN -->
+    <section class="panel" id="panel-admin" data-panel="admin" aria-labelledby="t-admin" hidden>
+      <h1 class="titular" id="t-admin">Administración</h1>
+      <p class="bajada">Agrega, edita y publica los reportes que ve el equipo.</p>
+      <div class="pestanas" role="tablist" aria-label="Secciones de administración">
+        <button role="tab" aria-selected="true" aria-controls="tab-a-form" id="b-a-form">Agregar reporte</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-a-lista" id="b-a-lista" tabindex="-1">Reportes</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-a-github" id="b-a-github" tabindex="-1">Publicar en GitHub</button>
+        <button role="tab" aria-selected="false" aria-controls="tab-a-consent" id="b-a-consent" tabindex="-1">Aceptaciones</button>
+      </div>
+
+      <div role="tabpanel" id="tab-a-form" aria-labelledby="b-a-form">
+        <form class="hoja" id="formReporte">
+          <h3 id="tituloForm">Agregar reporte</h3>
+          <p>El nombre es el texto que verá el equipo en la ficha.</p>
+          <input type="hidden" id="repId">
+          <div class="fila">
+            <div class="campo"><label for="repNombre">Nombre</label><input type="text" id="repNombre" required maxlength="80" placeholder="Ej.: Ventas diarias"></div>
+            <div class="campo"><label for="repCategoria">Área</label><input type="text" id="repCategoria" maxlength="40" placeholder="Ej.: Ventas" list="listaCategorias"><datalist id="listaCategorias"></datalist></div>
+          </div>
+          <div class="fila">
+            <div class="campo"><label for="repUrl">Enlace</label><input type="url" id="repUrl" required placeholder="https://"></div>
+            <div class="campo">
+              <label for="repAcceso">Quién lo ve</label>
+              <select id="repAcceso" required>
+                <option value="publico">Todo el equipo</option>
+                <option value="gerencia">Gerencia</option>
+                <option value="admin">Solo admin</option>
+              </select>
+            </div>
+          </div>
+          <div class="campo"><label for="repDescripcion">Descripción</label><input type="text" id="repDescripcion" maxlength="140" placeholder="Qué muestra este reporte"></div>
+          <div class="acciones">
+            <button class="btn btn-primario" type="submit" id="btnGuardarReporte">Agregar reporte</button>
+            <button class="btn btn-texto" type="button" id="btnCancelarEdicion" hidden>Cancelar edición</button>
+          </div>
+        </form>
+      </div>
+
+      <div role="tabpanel" id="tab-a-lista" aria-labelledby="b-a-lista" hidden>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th>Nombre</th><th>Área</th><th>Acceso</th><th>Descripción</th><th><span class="visually-hidden">Acciones</span></th></tr></thead>
+            <tbody id="tablaReportes"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="tab-a-github" aria-labelledby="b-a-github" hidden>
+        <form class="hoja" id="formGithub">
+          <h3>Publicar en GitHub</h3>
+          <p>Escribe <code>dataset.json</code> en el repositorio para que todo el equipo vea los cambios. Usa un token de alcance fino, limitado a este repositorio, con permiso Contents: Read and write. El token se guarda solo en este navegador.</p>
+          <div class="fila">
+            <div class="campo"><label for="ghRepo">Repositorio</label><input type="text" id="ghRepo" placeholder="usuario/repositorio" autocomplete="off"></div>
+            <div class="campo"><label for="ghBranch">Rama</label><input type="text" id="ghBranch" placeholder="main" autocomplete="off"></div>
+            <div class="campo"><label for="ghPath">Archivo</label><input type="text" id="ghPath" placeholder="dataset.json" autocomplete="off"></div>
+            <div class="campo"><label for="ghToken">Token de acceso</label><input type="password" id="ghToken" placeholder="github_pat_…" autocomplete="off"></div>
+          </div>
+          <div class="acciones">
+            <button class="btn btn-primario" type="submit">Guardar conexión</button>
+            <button class="btn btn-peligro" type="button" id="btnPublicar">Publicar dataset.json</button>
+            <button class="btn btn-borde" type="button" id="btnProbar">Probar conexión</button>
+            <button class="btn btn-texto" type="button" id="btnOlvidarToken">Olvidar token</button>
+          </div>
+          <div class="estado" id="ghEstado">Sin conexión configurada.</div>
+        </form>
+      </div>
+
+      <div role="tabpanel" id="tab-a-consent" aria-labelledby="b-a-consent" hidden>
+        <div class="hoja">
+          <h3>Registro de aceptaciones</h3>
+          <p id="consentResumen">Cada persona acepta los términos y la política de privacidad por separado antes de entrar. Aquí ves las aceptaciones hechas en este navegador; el registro de todas las personas está en la hoja central.</p>
+          <div class="estado" id="consentEstado"></div>
+          <div class="acciones" style="margin-top:16px">
+            <button class="btn btn-borde" type="button" id="btnExportarConsent">Descargar CSV</button>
+            <button class="btn btn-borde" type="button" id="btnReenviar">Reenviar pendientes</button>
+          </div>
+        </div>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th>Persona</th><th>Términos</th><th>Privacidad</th><th>Versión</th><th>Cómo</th><th>Envío</th></tr></thead>
+            <tbody id="tablaConsent"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 404 DENTRO DEL PORTAL -->
+    <section class="panel perdido" data-panel="404" aria-labelledby="t-404" hidden>
+      <div class="numero" aria-hidden="true">404</div>
+      <svg class="cinta-rota" viewBox="0 0 680 70" aria-hidden="true" focusable="false">
+        <path class="c-azul" pathLength="1600" d="M6 40 C 120 10, 230 62, 300 34"/>
+        <path class="c-rojo" pathLength="1600" d="M380 30 C 450 6, 560 58, 674 26"/>
+      </svg>
+      <h1 id="t-404">Esta sección no existe.</h1>
+      <p>La dirección <code id="ruta404"></code> no corresponde a ningún panel de NEXUS. Puede que el enlace esté incompleto o que la sección haya cambiado de nombre.</p>
+      <div class="acciones"><a class="btn btn-primario" href="#general">Ir a los reportes</a></div>
+    </section>
+  </main>
+
+  <footer class="pie-sitio">
+    <span>© 2026 <span data-legal="empresa.razon">Venejugos</span></span>
+    <span class="espacio"></span>
+    <nav aria-label="Documentos legales">
+      <a href="terminos.html">Términos y condiciones</a>
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="cookies.html">Política de cookies</a>
+      <button type="button" id="btnRetirar">Retirar mi consentimiento</button>
+    </nav>
+  </footer>
+
+  <!-- PUERTA DE CONSENTIMIENTO -->
+  <dialog id="dlgConsent" class="ancho" aria-labelledby="t-consent">
+    <form class="dialogo-cuerpo" id="formConsent" method="dialog" novalidate>
+      <h2 id="t-consent">Antes de entrar a NEXUS</h2>
+      <p>Para usar el portal necesitamos que leas y aceptes, por separado, los dos documentos. Guardamos la fecha, la hora y la forma en que aceptas.</p>
+      <div class="campo">
+        <label for="consentNombre">Nombre y apellido</label>
+        <input type="text" id="consentNombre" autocomplete="name" maxlength="80" required>
+      </div>
+      <label class="casilla" for="chkTerminos">
+        <input type="checkbox" id="chkTerminos">
+        <span>He leído y acepto los <a href="terminos.html" target="_blank" rel="noopener">Términos y condiciones</a> (versión <span data-legal="version.terminos">1.0</span>).</span>
+      </label>
+      <label class="casilla" for="chkPrivacidad">
+        <input type="checkbox" id="chkPrivacidad">
+        <span>He leído y acepto la <a href="privacidad.html" target="_blank" rel="noopener">Política de privacidad</a> (versión <span data-legal="version.privacidad">1.0</span>).</span>
+      </label>
+      <p class="nota">NEXUS no usa cookies. Guarda algunos datos en tu navegador para funcionar; lo explicamos en la <a href="cookies.html" target="_blank" rel="noopener">Política de cookies</a>.</p>
+      <div class="falta" id="consentFalta" aria-live="polite"></div>
+      <div class="dialogo-acciones">
+        <button class="btn btn-primario" type="submit" id="btnAceptar" disabled>Aceptar y entrar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ACCESO CON CONTRASEÑA -->
+  <dialog id="dlgClave" aria-labelledby="t-clave">
+    <form class="dialogo-cuerpo" id="formClave" novalidate>
+      <h2 id="t-clave">Acceso de gerencia</h2>
+      <p id="claveTexto">Escribe la contraseña para ver este panel.</p>
+      <div class="campo">
+        <label for="campoClave">Contraseña</label>
+        <input type="password" id="campoClave" autocomplete="current-password" required>
+      </div>
+      <div class="falta" id="claveFalta" aria-live="polite"></div>
+      <div class="dialogo-acciones">
+        <button class="btn btn-borde" type="button" id="btnCancelarClave">Cancelar</button>
+        <button class="btn btn-primario" type="submit">Entrar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- CONFIRMACIÓN GENÉRICA -->
+  <dialog id="dlgConfirmar" aria-labelledby="t-confirmar">
+    <form class="dialogo-cuerpo" method="dialog">
+      <h2 id="t-confirmar"></h2>
+      <p id="confirmarTexto"></p>
+      <div class="dialogo-acciones">
+        <button class="btn btn-borde" value="no">Cancelar</button>
+        <button class="btn btn-peligro" value="si" id="confirmarSi"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="legal.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'">
+  <title>Política de cookies · NEXUS</title>
+  <link rel="stylesheet" href="nexus.css">
+  <link rel="icon" href="icon-192.png">
+  <meta name="theme-color" content="#1a4fe8">
+</head>
+<body class="entra">
+  <a class="saltar" href="#doc">Saltar al contenido</a>
+  <header class="masthead">
+    <a class="marca" href="./" aria-label="Volver a NEXUS">
+      <img src="logo-venejugos.png" alt="Venejugos" width="52" height="52">
+      <span class="marca-texto"><span class="wordmark">NEXUS</span><span class="marca-sub">Venejugos</span></span>
+    </a>
+  </header>
+  <svg class="cinta" viewBox="0 0 1280 60" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="metal-plata" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1280" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset=".22" stop-color="#c3cde2"/><stop offset=".45" stop-color="#ffffff"/><stop offset=".7" stop-color="#a9b6cf"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+      <linearGradient id="metal-rojo" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1280" y2="0"><stop offset="0" stop-color="#ff5a6e"/><stop offset=".25" stop-color="#e2001a"/><stop offset=".5" stop-color="#8f0011"/><stop offset=".75" stop-color="#e2001a"/><stop offset="1" stop-color="#ff4d63"/></linearGradient>
+    </defs>
+    <path class="c-azul" pathLength="1600" d="M8 34 C 260 6, 520 52, 790 28 S 1120 6, 1272 22"/>
+    <path class="c-rojo" pathLength="1600" d="M8 46 C 280 20, 560 60, 820 40 S 1140 22, 1272 34"/>
+  </svg>
+  <article class="doc" id="doc">
+    <a class="volver" href="./"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Volver a NEXUS</a>
+    <h1>Política de cookies y almacenamiento</h1>
+    <p class="vigencia">Versión <span data-legal="version.cookies">1.0</span>, vigente desde el <span data-legal="vigencia">16 de noviembre de 2026</span>.</p>
+    <nav class="indice" aria-label="Contenido"><strong>Contenido</strong><ol><li><a href="#resumen">En pocas palabras</a></li><li><a href="#que">Cookies y almacenamiento local</a></li><li><a href="#guardamos">Qué guarda NEXUS en tu navegador</a></li><li><a href="#terceros">Servicios de terceros</a></li><li><a href="#borrar">Cómo borrar estos datos</a></li><li><a href="#marco">Marco legal</a></li><li><a href="#cambios">Cambios a esta política</a></li></ol></nav>
+
+<h2 id="resumen">1. En pocas palabras</h2>
+<div class="marco"><p>NEXUS no instala cookies propias ni de terceros y no usa analítica ni publicidad. Guarda en tu navegador solo lo necesario para funcionar y para recordar tu aceptación.</p></div>
+
+<h2 id="que">2. Cookies y almacenamiento local</h2>
+<p>Las cookies son pequeños archivos que un sitio deja en tu navegador y que viajan al servidor en cada visita. El almacenamiento local es parecido, pero sus datos se quedan en tu equipo y no se envían solos a ningún servidor. NEXUS usa solo almacenamiento local, almacenamiento de sesión y la caché de su service worker, que permite abrir el portal sin conexión.</p>
+
+<h2 id="guardamos">3. Qué guarda NEXUS en tu navegador</h2>
+<div class="tabla-envoltura"><table><thead><tr><th>Nombre</th><th>Tipo</th><th>Qué guarda</th><th>Duración</th><th>Quién</th></tr></thead><tbody><tr><td><code>consentimiento_nexus</code></td><td>Almacenamiento local</td><td>Tu aceptación vigente: nombre, fechas, versiones y forma de aceptación.</td><td>Hasta que retires tu consentimiento o borres los datos del navegador.</td><td>Todas las personas</td></tr><tr><td><code>consentimientos_nexus</code></td><td>Almacenamiento local</td><td>Historial de aceptaciones y retiros hechos en este navegador, y si ya se enviaron al registro central.</td><td>Hasta que borres los datos del navegador.</td><td>Todas las personas</td></tr><tr><td><code>dispositivo_nexus</code></td><td>Almacenamiento local</td><td>Identificador aleatorio de este navegador.</td><td>Hasta que borres los datos del navegador.</td><td>Todas las personas</td></tr><tr><td><code>reportes_nexus</code></td><td>Almacenamiento local</td><td>Copia de la lista de reportes para mostrarla rápido y sin conexión.</td><td>Se reemplaza en cada visita; se borra al retirar el consentimiento.</td><td>Todas las personas</td></tr><tr><td><code>sesion_nexus</code></td><td>Almacenamiento de sesión</td><td>Recuerda que entraste a un panel con contraseña.</td><td>Se borra al cerrar la pestaña o la sesión.</td><td>Gerencia y admin</td></tr><tr><td><code>config_nexus</code></td><td>Almacenamiento local</td><td>Huella cifrada de las contraseñas cambiadas en este navegador.</td><td>Hasta que borres los datos del navegador.</td><td>Gerencia y admin</td></tr><tr><td><code>github_nexus</code></td><td>Almacenamiento local</td><td>Repositorio, rama, archivo y token de GitHub para publicar.</td><td>Hasta que pulses “Olvidar token” o borres los datos.</td><td>Admin</td></tr><tr><td><code>nexus-v2</code></td><td>Caché del service worker</td><td>Archivos del portal (páginas, estilos, fuentes, logo) para que funcione sin conexión.</td><td>Hasta que se publique una versión nueva del portal.</td><td>Todas las personas</td></tr></tbody></table></div>
+<p>Las tipografías y el logo se sirven desde el mismo portal. No cargamos fuentes ni imágenes de Google u otros servicios, así que abrir NEXUS no le comunica tu visita a terceros por esa vía.</p>
+
+<h2 id="terceros">4. Servicios de terceros</h2>
+<ul>
+  <li><strong>GitHub Pages, api.github.com y raw.githubusercontent.com</strong> (GitHub, Inc.): alojan el portal y la lista de reportes. Como cualquier servidor web, registran tu dirección IP y tu navegador en sus registros técnicos.</li>
+  <li><strong>Google Apps Script</strong> (Google LLC): recibe el registro de tu aceptación cuando el registro central está activo.</li>
+  <li><strong>Reportes enlazados:</strong> al abrir un reporte sales de NEXUS. Ese sitio puede usar sus propias cookies, según su política.</li>
+</ul>
+
+<h2 id="borrar">5. Cómo borrar estos datos</h2>
+<p>Puedes usar “Retirar mi consentimiento” en el pie del portal, que borra tu aceptación y la copia de reportes. Para borrar todo, entra en la configuración de tu navegador, busca “Datos de sitios” o “Almacenamiento”, y elimina los de la dirección de NEXUS. Si borras tu aceptación, el portal te la pedirá otra vez en tu próxima visita.</p>
+
+<h2 id="marco">6. Marco legal</h2>
+<p>Venezuela no tiene una norma específica sobre cookies. Aplicamos los principios de información, finalidad y consentimiento del artículo 28 de la Constitución y de la sentencia N.° 1318 de 2011 de la Sala Constitucional, descritos en la <a href="privacidad.html">Política de privacidad</a>.</p>
+
+<h2 id="cambios">7. Cambios a esta política</h2>
+<p>Si NEXUS empieza a guardar algo distinto en tu navegador, actualizaremos esta tabla y la versión del documento antes de hacerlo.</p>
+
+  </article>
+  <footer class="pie-sitio">
+    <span>© 2026 <span data-legal="empresa.razon" class="dato">Venejugos</span></span>
+    <span class="espacio"></span>
+    <nav aria-label="Documentos legales">
+      <a href="terminos.html">Términos y condiciones</a>
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="cookies.html">Política de cookies</a>
+    </nav>
+  </footer>
+  <script src="legal.js"></script>
+</body>
+</html>
