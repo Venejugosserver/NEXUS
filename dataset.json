@@ -62,5 +62,13 @@
     "url": "https://venejugosserver.github.io/Sugerido-de-ventas/admin.html",
     "acceso": "gerencia",
     "descripcion": "Sugerido de compra por marca y cuadro analitico de comportamiento"
+  },
+  {
+    "id": 1794848075835,
+    "nombre": "TESORERIA",
+    "categoria": "TESORERIA",
+    "url": "https://github.com/Venejugosserver/TESORERIA/settings/pages",
+    "acceso": "gerencia",
+    "descripcion": "REPORTE VENEJUGOS Y NMS"
   }
 ]
