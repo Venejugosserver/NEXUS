@@ -70,5 +70,13 @@
     "url": "https://venejugosserver.github.io/TESORERIA/",
     "acceso": "gerencia",
     "descripcion": "REPORTE VENEJUGOS Y NMS"
+  },
+  {
+    "id": 1794929499440,
+    "nombre": "INVENTARIO",
+    "categoria": "COMPRAS",
+    "url": "https://venejugosserver.github.io/INVENTARIO/inventario.html",
+    "acceso": "gerencia",
+    "descripcion": "INVENTARIO AUDITORIAS"
   }
 ]
