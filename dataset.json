@@ -78,5 +78,13 @@
     "url": "https://venejugosserver.github.io/INVENTARIO/inventario.html",
     "acceso": "gerencia",
     "descripcion": "INVENTARIO AUDITORIAS"
+  },
+  {
+    "id": 1795103943199,
+    "nombre": "CATALOGO PRUEBA",
+    "categoria": "VENTAS",
+    "url": "https://venejugosserver.github.io/CATALOGO-1/",
+    "acceso": "publico",
+    "descripcion": "Es de prueba***** OJO*****"
   }
 ]
